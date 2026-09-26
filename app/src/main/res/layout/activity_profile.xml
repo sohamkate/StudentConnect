@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F5FC"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/my_profile"
+            android:textColor="#29252F"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="2dp"
+            app:strokeColor="#E8E2F0"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="22dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/personal_details"
+                    android:textColor="#6547A8"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <!-- Name -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/name"
+                    android:textColor="#77717E"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/Name"
+                    android:textColor="#29252F"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- Email -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/EMail"
+                    android:textColor="#77717E"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/EMAIL"
+                    android:textColor="#29252F"
+                    android:textSize="15sp" />
+
+                <!-- Mobile -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/Mobile_number"
+                    android:textColor="#77717E"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/mobile"
+                    android:textColor="#29252F"
+                    android:textSize="15sp" />
+
+                <!-- Course -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/Course"
+                    android:textColor="#77717E"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvCourse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/COURSE"
+                    android:textColor="#29252F"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <!-- Enrollment Number -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/Enrollment_number"
+                    android:textColor="#77717E"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvEnrollmentNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/ENrollment_number"
+                    android:textColor="#29252F"
+                    android:textSize="15sp" />
+
+                <!-- Joining Year -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/Joining_year"
+                    android:textColor="#77717E"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvJoiningYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/Joining_Year"
+                    android:textColor="#29252F"
+                    android:textSize="15sp" />
+
+                <!-- Semester -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/Semester"
+                    android:textColor="#77717E"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvSemester"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/SEMESTER"
+                    android:textColor="#29252F"
+                    android:textSize="15sp" />
+
+                <!-- Date of Birth -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/Date_of_birth"
+                    android:textColor="#77717E"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvDateOfBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/DATE_of_birth"
+                    android:textColor="#29252F"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="22dp"
+            android:text="@string/edit_data"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:backgroundTint="#6F52B5"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="25dp"
+            android:text="@string/logout"
+            android:textColor="#6F52B5"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:backgroundTint="#E9E1F5"
+            tools:ignore="VisualLintButtonSize" />
+
+    </LinearLayout>
+
+</ScrollView>
