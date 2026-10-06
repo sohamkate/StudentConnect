@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8F5FC"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    android:background="#F8F6FC">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,221 +13,224 @@
         android:orientation="vertical"
         android:padding="24dp">
 
+        <!-- Page Title -->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:text="@string/my_profile"
-            android:textColor="#29252F"
+            android:layout_marginTop="25dp"
+            android:text="My Profile"
+            android:textColor="#6A3FC5"
             android:textSize="28sp"
             android:textStyle="bold" />
 
-        <com.google.android.material.card.MaterialCardView
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Your student information"
+            android:textColor="#777777"
+            android:textSize="15sp" />
+
+        <!-- Profile Card -->
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            app:cardBackgroundColor="#FFFFFF"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="2dp"
-            app:strokeColor="#E8E2F0"
-            app:strokeWidth="1dp">
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="#FFFFFF">
 
-            <LinearLayout
+            <!-- Section Title -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal Details"
+                android:textColor="#29252F"
+                android:textSize="18sp" />
+
+            <!-- Name -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:text="Name"
+                android:textColor="#777777"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tvName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="22dp">
+                android:layout_marginTop="5dp"
+                android:text="Name"
+                android:textColor="#29252F"
+                android:textSize="16sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/personal_details"
-                    android:textColor="#6547A8"
-                    android:textSize="13sp"
-                    android:textStyle="bold" />
+            <!-- Email -->
 
-                <!-- Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Email"
+                android:textColor="#777777"
+                android:textSize="13sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:text="@string/name"
-                    android:textColor="#77717E"
-                    android:textSize="13sp" />
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Email"
+                android:textColor="#29252F"
+                android:textSize="16sp" />
 
-                <TextView
-                    android:id="@+id/tvName"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/Name"
-                    android:textColor="#29252F"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+            <!-- Mobile -->
 
-                <!-- Email -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Mobile Number"
+                android:textColor="#777777"
+                android:textSize="13sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="18dp"
-                    android:text="@string/EMail"
-                    android:textColor="#77717E"
-                    android:textSize="13sp" />
+            <TextView
+                android:id="@+id/tvMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Mobile"
+                android:textColor="#29252F"
+                android:textSize="16sp" />
 
-                <TextView
-                    android:id="@+id/tvEmail"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/EMAIL"
-                    android:textColor="#29252F"
-                    android:textSize="15sp" />
+            <!-- Course -->
 
-                <!-- Mobile -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Course"
+                android:textColor="#777777"
+                android:textSize="13sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="18dp"
-                    android:text="@string/Mobile_number"
-                    android:textColor="#77717E"
-                    android:textSize="13sp" />
+            <TextView
+                android:id="@+id/tvCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Course"
+                android:textColor="#29252F"
+                android:textSize="16sp" />
 
-                <TextView
-                    android:id="@+id/tvMobile"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/mobile"
-                    android:textColor="#29252F"
-                    android:textSize="15sp" />
+            <!-- Enrollment Number -->
 
-                <!-- Course -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Enrollment Number"
+                android:textColor="#777777"
+                android:textSize="13sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="18dp"
-                    android:text="@string/Course"
-                    android:textColor="#77717E"
-                    android:textSize="13sp" />
+            <TextView
+                android:id="@+id/tvEnrollmentNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Enrollment Number"
+                android:textColor="#29252F"
+                android:textSize="16sp" />
 
-                <TextView
-                    android:id="@+id/tvCourse"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/COURSE"
-                    android:textColor="#29252F"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
+            <!-- Joining Year -->
 
-                <!-- Enrollment Number -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Joining Year"
+                android:textColor="#777777"
+                android:textSize="13sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="18dp"
-                    android:text="@string/Enrollment_number"
-                    android:textColor="#77717E"
-                    android:textSize="13sp" />
+            <TextView
+                android:id="@+id/tvJoiningYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Joining Year"
+                android:textColor="#29252F"
+                android:textSize="16sp" />
 
-                <TextView
-                    android:id="@+id/tvEnrollmentNumber"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/ENrollment_number"
-                    android:textColor="#29252F"
-                    android:textSize="15sp" />
+            <!-- Semester -->
 
-                <!-- Joining Year -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Semester"
+                android:textColor="#777777"
+                android:textSize="13sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="18dp"
-                    android:text="@string/Joining_year"
-                    android:textColor="#77717E"
-                    android:textSize="13sp" />
+            <TextView
+                android:id="@+id/tvSemester"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Semester"
+                android:textColor="#29252F"
+                android:textSize="16sp" />
 
-                <TextView
-                    android:id="@+id/tvJoiningYear"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/Joining_Year"
-                    android:textColor="#29252F"
-                    android:textSize="15sp" />
+            <!-- Date of Birth -->
 
-                <!-- Semester -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Date of Birth"
+                android:textColor="#777777"
+                android:textSize="13sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="18dp"
-                    android:text="@string/Semester"
-                    android:textColor="#77717E"
-                    android:textSize="13sp" />
+            <TextView
+                android:id="@+id/tvDateOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Date of Birth"
+                android:textColor="#29252F"
+                android:textSize="16sp" />
 
-                <TextView
-                    android:id="@+id/tvSemester"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/SEMESTER"
-                    android:textColor="#29252F"
-                    android:textSize="15sp" />
+        </LinearLayout>
 
-                <!-- Date of Birth -->
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="18dp"
-                    android:text="@string/Date_of_birth"
-                    android:textColor="#77717E"
-                    android:textSize="13sp" />
-
-                <TextView
-                    android:id="@+id/tvDateOfBirth"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="@string/DATE_of_birth"
-                    android:textColor="#29252F"
-                    android:textSize="15sp" />
-
-            </LinearLayout>
-
-        </com.google.android.material.card.MaterialCardView>
+        <!-- Edit Button -->
 
         <Button
             android:id="@+id/btnEdit"
             android:layout_width="match_parent"
-            android:layout_height="54dp"
-            android:layout_marginTop="22dp"
-            android:text="@string/edit_data"
+            android:layout_height="55dp"
+            android:layout_marginTop="25dp"
+            android:text="Edit Data"
             android:textColor="#FFFFFF"
-            android:textSize="14sp"
+            android:textSize="16sp"
             android:textStyle="bold"
-            android:backgroundTint="#6F52B5"
-            tools:ignore="VisualLintButtonSize" />
+            android:backgroundTint="#6A3FC5" />
+
+        <!-- Logout Button -->
 
         <Button
             android:id="@+id/btnLogout"
             android:layout_width="match_parent"
-            android:layout_height="54dp"
+            android:layout_height="55dp"
             android:layout_marginTop="12dp"
-            android:layout_marginBottom="25dp"
-            android:text="@string/logout"
-            android:textColor="#6F52B5"
-            android:textSize="14sp"
+            android:layout_marginBottom="30dp"
+            android:text="Logout"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
             android:textStyle="bold"
-            android:backgroundTint="#E9E1F5"
-            tools:ignore="VisualLintButtonSize" />
+            android:backgroundTint="#D32F2F" />
 
     </LinearLayout>
 
